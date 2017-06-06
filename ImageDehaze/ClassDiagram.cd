@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GuidedFilterImpl" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAEAAAAAAAAAAAAAAAACAQAAA=</HashCode>
+      <FileName>guidedfilter.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuidedFilterMono" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAgAAAQAAAAAAIBACAQAAA=</HashCode>
+      <FileName>guidedfilter.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuidedFilterColor" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQABAAAAAAAEAMAAAAAAAAAAAAAAIAQAIBAgAQAAk=</HashCode>
+      <FileName>guidedfilter.cpp</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CrossBilateralFilter" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAABAAAAAABQACACAGIAAAAAAEAgAA=</HashCode>
+      <FileName>BiFilter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ImgDehaze" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAApAAgkAhAgAIAAgAABAAQEAAAAAYIgECEAgQBgBA=</HashCode>
+      <FileName>ImgDehaze.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pixel" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAACAAAIAEgAAAAAAA=</HashCode>
+      <FileName>ImgDehaze.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeHazeModel" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="DeHazeModel::MatType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DeHazeModel.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAxAAAAABAAAIEAgAAAAAQAAAAAAYAoEAEAgAAAAA=</HashCode>
+      <FileName>DeHazeModel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeHazeModelLi" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAZAQAgAgogAAAAAAABAAAAAAAAIEAIAAAgAABgAA=</HashCode>
+      <FileName>DeHazeModelLi.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GuidedFilter" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAEAAAAAAAAAAAAAACAAAQAAA=</HashCode>
+      <FileName>guidedfilter.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Region" Collapsed="true">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAgYAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ImgDehaze.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

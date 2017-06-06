@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ea8ada66-c820-424d-ad9a-9105057fae9d"
+  name="DehazeModeling" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="147797ce-6a1a-4b7b-8af5-021fbb88df9b">
+      <profileInstance
+        Id="679fd5f0-7e8a-417d-b89a-0d192b3ad6b4"
+        name="TextTemplateBindings" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="47535d4a-0934-486b-9cb6-9314571e8f8a"
+        name="DehazeModel"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="705dba9d-a560-4553-b6f9-bb1a44480d65"
+            name="srcImg"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f500ec74-ab78-418e-b224-1c31a6ca9549"
+                LastKnownName="cv::Mat"
+                LastKnownLocation="DehazeModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="65862717-633a-4f40-8563-d4308aa2bcf6"
+            name="dstImg"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f500ec74-ab78-418e-b224-1c31a6ca9549"
+                LastKnownName="cv::Mat"
+                LastKnownLocation="DehazeModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c37cefc4-2742-488f-8238-54b1a3cf7785"
+            name="darkImg"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f500ec74-ab78-418e-b224-1c31a6ca9549"
+                LastKnownName="cv::Mat"
+                LastKnownLocation="DehazeModeling.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f3e5a5bf-090d-47f2-acd8-61fd90e6d4ff"
+            name="tranImg"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f500ec74-ab78-418e-b224-1c31a6ca9549"
+                LastKnownName="cv::Mat"
+                LastKnownLocation="DehazeModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f98990ff-3d83-49aa-846c-3ea1ad7e8a54"
+            name="dehaze"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18227930-0921-48c6-aa5c-0baa6b73c268"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="65ebfdb7-cb06-4702-9bf8-4060209284e1"
+                      LastKnownName="void"
+                      LastKnownLocation="DehazeModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="59377345-0574-4067-b893-51290d9a7d0f"
+                  name="string srcPath"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a43e148c-6ed6-4c14-877f-46daf1f137a0"
+                  name="bool isStore"
+                  direction="In"
+                  isUnique="false">
+                  <defaultValue>
+                    <literalString
+                      Id="b61f8b2a-8e60-418f-837f-1bb2afa6ba92"
+                      name="DefaultValue"
+                      value="true" />
+                  </defaultValue>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fa20afce-3428-4d29-8817-f65e4b3ca4a1"
+                  name="string dstPath"
+                  direction="In"
+                  isUnique="false">
+                  <defaultValue>
+                    <literalString
+                      Id="50237e5a-54ba-40ff-8436-678f8390bd27"
+                      name="DefaultValue"
+                      value="string()" />
+                  </defaultValue>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ddcbf06e-451c-49e2-8948-3d06dbdc9815"
+            name="readImg"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f402e9f7-8647-44c4-8e2d-61937a502cee"
+                  name="string srcFilePath"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="317f20a6-49ce-45ce-b061-d73e7d6fff5c"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="65ebfdb7-cb06-4702-9bf8-4060209284e1"
+                      LastKnownName="void"
+                      LastKnownLocation="DehazeModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="31dd95a5-67cb-4598-abcc-178b98f80713"
+            name="showImage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f42dd7b3-6be4-4bd0-8e2d-d56b2a52f431"
+                  name="string winName"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7766c18f-1503-44a0-a190-57ef9ab172e0"
+                  name="MatType mt = MatType::DST"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5510fe36-0b28-436f-8288-f3c69afbac41"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="65ebfdb7-cb06-4702-9bf8-4060209284e1"
+                      LastKnownName="void"
+                      LastKnownLocation="DehazeModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="587124f9-43ef-4a97-ade1-bd2e39a9060b"
+            name="writeImg"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4016cec3-06fb-4ddd-9e44-1ff2f45c0963"
+                  name="string dstPath"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dde4961d-72d9-4b69-b93d-22b28c4db4fc"
+                  name="MatType mt = MatType::DST"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9b6545d0-ebea-4276-b53c-a38eed956b52"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="65ebfdb7-cb06-4702-9bf8-4060209284e1"
+                      LastKnownName="void"
+                      LastKnownLocation="DehazeModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fdfe5be9-9a64-4143-8314-65d61e190725"
+            name="getDarkChannelImg"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dea6d4f8-52c0-41d6-94f8-8343aa6e0498"
+                  name="int darkRadius"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bfcb2db3-4f99-43ba-9775-2424085f5c2e"
+            name="getAtmosphericLight"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="505c048e-9a67-4a6d-bdcf-266a3ce1c166"
+        name="DehazeModelHe"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a57fb87d-2945-45b6-aa04-1c3eb99d1e30"
+            isSubstitutable="false">
+            <classMoniker
+              Id="47535d4a-0934-486b-9cb6-9314571e8f8a"
+              LastKnownName="DehazeModel"
+              LastKnownLocation="DehazeModeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="8e1f7f7d-b0ac-49f1-928c-510d79c290bf"
+            name="atmosphericLight"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="f9f29079-b96b-4e56-962d-76d42afcf3e1"
+                LastKnownName="Vec3b"
+                LastKnownLocation="DehazeModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="193aacaa-9978-40f3-a026-c0c9db33aac7"
+        name="DehazeModelLi"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a7d4b6ff-e2d9-4ad4-8e6a-96e317e8b3a3"
+            isSubstitutable="false">
+            <classMoniker
+              Id="47535d4a-0934-486b-9cb6-9314571e8f8a"
+              LastKnownName="DehazeModel"
+              LastKnownLocation="DehazeModeling.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a8d74dd7-9338-4e45-9d1d-75a54503c2cb"
+            name="confidenceMat"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="cc7bc327-57a3-431e-95b5-dfcadcd7a95d"
+                LastKnownName="Mat"
+                LastKnownLocation="DehazeModeling.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c8b39301-9c7f-4d03-b232-3fb2bcb6cce3"
+            name="adaptAndPEDarkPrior"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="99f63a9a-5e2d-428e-9764-b3837cf38a44"
+                  name="int darkR"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4eb173c6-7220-4701-933b-aae5e852eff8"
+                  direction="Return"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="26a22e88-cbd4-46fc-a1da-7b0031a93892"
+            name="getRestoredImg"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4a3c698f-47a9-4b1d-bfb4-f8325e0cd7aa"
+                  direction="Return"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6f71108e-0a4a-483c-b756-069fc75049b6"
+            name="getPostEnhancedImg"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="425ca1a5-b0b1-4fdd-993b-6a1c74df9110"
+                  direction="Return" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="35791ade-648b-412e-bc25-a6853f929f35"
+            name="getPostLumAjustImg"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="79897cc7-8d1d-4d62-8bcd-ee79dc25f1c7"
+            name="getTranImg"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7df2b901-5a56-4397-ba52-ea3195e7807d"
+            name="getConfidenceMat"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3f56b61e-f969-44bc-a6b9-eda2864a072c"
+                  name="float k1"
+                  direction="In"
+                  isUnique="false">
+                  <defaultValue>
+                    <literalString
+                      Id="905d41f4-d9d6-49cf-94d9-7edfda480268"
+                      name="DefaultValue"
+                      value="8.0" />
+                  </defaultValue>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0fc9f36c-ff53-404b-ac43-330d86b2e854"
+                  name="float coeOfk2"
+                  direction="In"
+                  isUnique="false">
+                  <defaultValue>
+                    <literalString
+                      Id="7cc9af37-eaba-43ba-8232-67fda471237b"
+                      name="DefaultValue"
+                      value="8.0" />
+                  </defaultValue>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2d4d9a7d-316b-4d02-a656-2fb2a0f2da9e"
+            name="getAFDarkImg"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d061b08d-a668-4a1e-8e04-4615cbf0d139"
+                  name="int d"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="28ab9380-f2df-49bf-a3a1-f78a5d3e464b"
+                  name="double sigma_color"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="36390d41-d716-4646-a06d-40743911cc37"
+            name="getMinImg"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6836a436-5ef6-48be-a946-be93bbab47a0"
+            name="getAtmosphericLight"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a57a4fb3-587f-492a-89e3-42ecba78b519"
+            name="getDarkChannelImg"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0a3a03f5-988b-4ba5-853e-3e121240816b"
+                  name="int darkRadius"
+                  direction="In"
+                  isUnique="false">
+                  <defaultValue>
+                    <literalString
+                      Id="4a89a60a-137b-4bcf-b16d-2d07a4742924"
+                      name="DefaultValue"
+                      value="7" />
+                  </defaultValue>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c1b264f5-09bd-4e2d-a4a9-f45794d1d0a9"
+            name="getConfidenceMat1"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3558d586-4180-4fd9-aeae-e201e6d557ed"
+                  name="float k1"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="118d9588-9f6b-4f60-a61a-c4db4a08f0a1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cc7bc327-57a3-431e-95b5-dfcadcd7a95d"
+                      LastKnownName="Mat"
+                      LastKnownLocation="DehazeModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2ebf635b-4fa0-4141-9c9e-811f29608aa0"
+            name="getConfidenceMat2"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fd8378d5-ba1b-4969-926a-1a8f2972bf90"
+                  name="float coeOfk2"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3908d194-6e46-45ed-a17c-5c63823f1313"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="cc7bc327-57a3-431e-95b5-dfcadcd7a95d"
+                      LastKnownName="Mat"
+                      LastKnownLocation="DehazeModeling.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2b084dd9-6b63-4718-af21-3355c158a768"
+            name="getLuminanceImg"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="336e30b0-ca76-40c5-af15-3e201df8f2e3"
+            name="getBGImg"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6949c715-62e2-4249-9cea-59bbad657d53"
+            name="getMaxValFromDark"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="4aedad42-0280-482e-925d-079589193846"
+        name="DehazeModelXu"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b288701c-6150-4310-a998-c955f0f59551"
+            isSubstitutable="false">
+            <classMoniker
+              Id="47535d4a-0934-486b-9cb6-9314571e8f8a"
+              LastKnownName="DehazeModel"
+              LastKnownLocation="DehazeModeling.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="57e13d1b-edc9-4138-abdc-33be8117b6eb"
+        name="Class4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7f6aca42-d560-4439-8c45-4e3d386b2919"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_1608.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="a1ba9135-58ee-4e53-b33f-ba5f58d222f3"
+        name="MatType"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="84b7deea-afdd-4739-8cd9-5700c4712277"
+            isDerived="false"
+            sourceEndRoleName="MatType"
+            targetEndRoleName="DehazeModel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="47535d4a-0934-486b-9cb6-9314571e8f8a"
+              LastKnownName="DehazeModel"
+              LastKnownLocation="DehazeModeling.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e20c986d-1c4a-497b-8781-5a3b2009b1a1"
+                  name="MatType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b3b2b281-b0c4-4c10-9c16-c048fba98135"
+                  name="DehazeModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f500ec74-ab78-418e-b224-1c31a6ca9549"
+        name="cv::Mat" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="65ebfdb7-cb06-4702-9bf8-4060209284e1"
+        name="void" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="83bd61ec-ee49-4571-b92c-1043ae2f87ac"
+        name="void(" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="f9f29079-b96b-4e56-962d-76d42afcf3e1"
+        name="Vec3b" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="cc7bc327-57a3-431e-95b5-dfcadcd7a95d"
+        name="Mat" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
