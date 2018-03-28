@@ -1,4 +1,48 @@
-/ImageDehaze/paper/*
-/ImageDehaze/rcampus/*
-/ImageDehaze/res/*
+# Prerequisites
+*.d
 
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+#将动态库同步到仓库
+#*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Fortran module files
+*.mod
+*.smod
+
+# Executables
+#*.exe
+*.out
+*.app
+**/x64
+**/debug
+**/release
+!/debug
+
+# Visual studio file
+*.sdf
+*.opensdf
+*.ipch
+*.suo
+**/.vs
+*.aps
+
+#TestSln_RenJiewen
+**/MineViewerTestRen
